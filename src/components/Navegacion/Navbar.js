@@ -23,10 +23,10 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-dark  py-5">
+      <nav className="navbar navbar-expand-lg navbar-dark py-3">
         <div className="container">
           <Link className="navbar-brand" href="/">
-            <img src="/images/logo.png" className="img-fluid" alt="Logo" />
+            <img src="/images/logo_principal.png" className="img-fluid" alt="Logo" />
           </Link>
           <button
             className="navbar-toggler"

@@ -7,7 +7,7 @@ export default function SobreNosotros({ children }) {
 
     // Seleccionar el layout según la ruta
     const getLayout = () => {
-        if (pathname.startsWith("/contacto")) {
+        if (pathname.startsWith("/noticias")) {
             return <ContactLayout>{children}</ContactLayout>;
         }
         return <PageLayout>{children}</PageLayout>;

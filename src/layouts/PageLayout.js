@@ -12,7 +12,7 @@ export function PageLayout(props){
                 <Navbar></Navbar>
             </header>
 
-            <main className="container-xl">
+            <main className="container-fluid">
                     {children}
             </main>
 
