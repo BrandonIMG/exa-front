@@ -4,6 +4,9 @@ export const ENV = {
     ENDPOINTS:{
         SOCIALS: "socials?populate=*",
         PAGES: "pages",
-        LEGALS: "legals"
+        LEGALS: "legals",
+        SLIDER: "main-sliders",
+        POSTS: "posts",
+        EVENTS: "events"
     }
 }

@@ -19,7 +19,6 @@ export default function Footer(){
                     const response = await legatlCtrl.getLegalItems();
                     setItems(response.data)
                     const response_2 = await menuCtrl.getMenuItems();
-                    console.log(response_2)
                     setMenuItems(response_2.data);
                 } catch (error) {
                     console.error("Error al obtener los legales:", error);
