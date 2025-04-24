@@ -7,7 +7,7 @@ import 'animate.css';
 
 const postsCtrl = new Posts();
 
-export default function PostsHome({ sort = "desc", pageSize = 4, page = 1, onPageChange }) {
+export default function PostsGrid({ sort = "desc", pageSize = 4, page = 1, onPageChange }) {
   const [posts, setPosts] = useState([]);
   const [pagination, setPagination] = useState(null);
   const [animate, setAnimate] = useState(false);
@@ -31,7 +31,7 @@ export default function PostsHome({ sort = "desc", pageSize = 4, page = 1, onPag
 
   return (
     <div className={`container-fluid mt-5 ${animate ? 'animate__animated animate__fadeInLeft' : ''}`}>
-      <div className="grid-post">
+      <div className="grid-post-home">
         {posts &&
           map(posts, (post) => (
             <div key={post.id} className="card">

@@ -2,7 +2,7 @@ import { useEffect,useState } from "react";
 import { PageLayout } from "@/layouts/PageLayout";
 import Slider from "@/components/Slider/Slider";
 import { MainSlider } from "@/api/main-slider";
-import PostsHome from "@/components/Posts/Posts";
+import PostsGrid from "@/components/Posts/PostGrid";
 
 const slideCtrl = new MainSlider();
 
@@ -26,9 +26,15 @@ export default function SobreNosotros(){
 return(
 <PageLayout>
     {slides && <Slider slides={slides} className="mt-5" />}
-    <h3 className="mt-5">Noticias</h3>
-    <PostsHome sort="desc" limit={4} />
-
+    <div className="noticias-home">
+        <PostsGrid
+        className="col-lg-8"
+            sort="desc"
+            pageSize={10}
+            page={page}
+            onPageChange={setPage} />
+                <div className="col-lg-4"></div>
+    </div>
 </PageLayout>
 )
 }
