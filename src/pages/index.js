@@ -31,8 +31,7 @@ return(
         className="col-lg-8"
             sort="desc"
             pageSize={10}
-            page={page}
-            onPageChange={setPage} />
+            />
                 <div className="col-lg-4"></div>
     </div>
 </PageLayout>

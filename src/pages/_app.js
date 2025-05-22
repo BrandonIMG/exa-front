@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@/styles/global.css"
 import dynamic from "next/dynamic";
+import Footer from "@/components/Footer/Footer";
 
 const BootstrapClientSide = dynamic(
   () => import('../components/Bootstrap/BootstrapClient'),
