@@ -36,20 +36,20 @@ export default function PostsGrid({ sort = "desc", pageSize = 4, page = 1, onPag
           map(posts, (post) => (
             <div key={post.id} className="card">
               <img
-                src={`${ENV.SERVER_HOST}${post.thumbnail.url}`}
+                src={`${post.Thumbnail.url}`}
                 className="card-img-top"
                 alt={post.title}
               />
               <div className="card-body">
                 <Link
-                  href={`${post.url}?id=${post.id}`}
+                  href={`${post.slug}?id=${post.id}`}
                   target="_blank"
                   className="card-title"
                 >
                   {post.title}
                 </Link>
                 <Link
-                  href={`${post.url}?id=${post.id}`}
+                  href={`${post.slug}?id=${post.id}`}
                   className="btn btn-primary btn-post"
                 >
                   Leer más

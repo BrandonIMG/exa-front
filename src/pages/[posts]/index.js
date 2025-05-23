@@ -35,7 +35,7 @@ export default function LaRecompexa() {
             ) : (
                 <article className="d-flex flex-column justify-content-center post-container">
                 <h1 className="display-3 fw-bold text-center mb-5">{post[0]?.title}</h1>
-                <img src={`${ENV.SERVER_HOST}${post[0].thumbnail.url}`} className="post-thubnail"/>
+                <img src={`${post[0].Thumbnail.url}`} className="post-thubnail"/>
                 <p dangerouslySetInnerHTML={{ __html: post[0]?.content }} />
                 </article>
             )}
